@@ -38,6 +38,7 @@
             <el-button
             v-for="(btn, index) in item.btn"
             :key="index"
+            :size="btn.size"
             :icon="btn.icon"
             @click="btn.handlerClick && btn.handlerClick(scope.row)"
             :type="btn.type">
